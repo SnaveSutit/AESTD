@@ -17,7 +17,6 @@ scoreboard players operation #aestd aestd.math.var2 = #aestd aestd.math
 scoreboard players operation #aestd aestd.math.var2 %= #100 aestd.math.var
 
 execute if score #aestd aestd.math.var matches 20 run scoreboard players set #aestd aestd.math.var2 0
-say Hello
 
 tellraw @a[tag=aestd.using_worldborder] ["",{"text":"TPS: ","color":"aqua","bold":true},{"score":{"name":"#aestd","objective":"aestd.math.var"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"#aestd","objective":"aestd.math.var2"},"color":"gold"}]
 tag @a[tag=aestd.using_worldborder] remove aestd.using_worldborder
